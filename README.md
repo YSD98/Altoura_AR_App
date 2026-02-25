@@ -31,3 +31,15 @@ Unity 6000.3.8f1
 
 Device: Poco F4 5G (global variant)  
 Android Version: Android 14 (HyperOS 1.0.7)
+
+---
+---
+
+## 📹 Demo Video
+
+The following recordings demonstrate the required features:
+
+- [In-Editor Testing](https://drive.google.com/file/d/1I-ZKFhVuOCocvg9PqXTnaCgPGPaxV0vz/view?usp=sharing)
+- [Live On-Device Testing](https://drive.google.com/file/d/1pBBIh9wWcKyDgbuPVZOQlDvVEe4mzVhG/view?usp=sharing)
+
+The screen recording is also included in the GitHub Release assets.
