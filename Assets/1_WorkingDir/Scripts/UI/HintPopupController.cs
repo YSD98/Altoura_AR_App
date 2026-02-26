@@ -1,23 +1,26 @@
 using UnityEngine;
 using System.Collections;  
 
-public class HintPopupController : MonoBehaviour
+namespace AR_Assessment.Ui
 {
-    public GameObject scanPopup, placePopup;
-
-    void Start()
+    public class HintPopupController : MonoBehaviour
     {
-        
-        StartCoroutine(ShowHintPopups());
-    }
+        public GameObject scanPopup, placePopup;
 
-    IEnumerator ShowHintPopups()
-    {
-        yield return new WaitForSeconds(5f);
-        scanPopup.SetActive(false);
-        placePopup.SetActive(true);
+        void Start()
+        {
+            
+            StartCoroutine(ShowHintPopups());
+        }
 
-        yield return new WaitForSeconds(3f);
-        placePopup.SetActive(false);
+        IEnumerator ShowHintPopups()
+        {
+            yield return new WaitForSeconds(5f);
+            scanPopup.SetActive(false);
+            placePopup.SetActive(true);
+
+            yield return new WaitForSeconds(3f);
+            placePopup.SetActive(false);
+        }
     }
 }

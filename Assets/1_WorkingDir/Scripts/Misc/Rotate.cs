@@ -1,9 +1,12 @@
 using UnityEngine;
-public class Rotate : MonoBehaviour
+namespace AR_Assessment.Misc
 {
-    public float speed = 500f;
-    void Update()
+    public class Rotate : MonoBehaviour
     {
-        transform.Rotate(Vector3.back * speed * Time.deltaTime);
+        public float speed = 500f;
+        void Update()
+        {
+            transform.Rotate(Vector3.back * speed * Time.deltaTime);
+        }
     }
 }

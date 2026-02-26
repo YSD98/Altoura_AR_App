@@ -1,21 +1,24 @@
 using UnityEngine;
 
-public class CanvasFacingCamera : MonoBehaviour
+namespace AR_Assessment.Ui
 {
-    [SerializeField]Camera m_Camera;
-
-    void Start()
+    public class CanvasFacingCamera : MonoBehaviour
     {
-        if (m_Camera == null)
-            m_Camera = Camera.main;
-    }
+        [SerializeField]Camera m_Camera;
 
-    void LateUpdate()
-    {
-        if (m_Camera == null)
-            return;
+        void Start()
+        {
+            if (m_Camera == null)
+                m_Camera = Camera.main;
+        }
 
-        Vector3 direction = transform.position - m_Camera.transform.position;
-        transform.rotation = Quaternion.LookRotation(direction);
+        void LateUpdate()
+        {
+            if (m_Camera == null)
+                return;
+
+            Vector3 direction = transform.position - m_Camera.transform.position;
+            transform.rotation = Quaternion.LookRotation(direction);
+        }
     }
 }

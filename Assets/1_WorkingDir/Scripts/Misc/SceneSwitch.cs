@@ -1,10 +1,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneSwitch : MonoBehaviour
+namespace AR_Assessment.Misc
 {
-    public void TransitToScene(string sceneName)
+    public class SceneSwitch : MonoBehaviour
     {
-        SceneManager.LoadSceneAsync(sceneName);
+        public void TransitToScene(string sceneName)
+        {
+            SceneManager.LoadSceneAsync(sceneName);
+        }
     }
 }

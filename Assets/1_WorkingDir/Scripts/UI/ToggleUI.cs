@@ -1,15 +1,18 @@
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
-public class ToggleUI : MonoBehaviour
+namespace AR_Assessment.Ui
 {
-    public XRGrabInteractable xRGrabInteractable;
-    public void DisableUiObject(GameObject UiGameObject)
+    public class ToggleUI : MonoBehaviour
     {
-        UiGameObject.SetActive(false);
-    }
-    public void EnableUiObject(GameObject UiGameObject)
-    {
-        UiGameObject.SetActive(true);
+        public XRGrabInteractable xRGrabInteractable;
+        public void DisableUiObject(GameObject UiGameObject)
+        {
+            UiGameObject.SetActive(false);
+        }
+        public void EnableUiObject(GameObject UiGameObject)
+        {
+            UiGameObject.SetActive(true);
+        }
     }
 }
